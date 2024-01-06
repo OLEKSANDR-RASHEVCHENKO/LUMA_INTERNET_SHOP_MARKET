@@ -2,6 +2,7 @@ package E2E;
 
 import E2E.pages.Home_Page;
 import E2E.pages.SignInPage;
+import E2E.pages.enums.Menu;
 import org.testng.annotations.Test;
 
 public class SingInTest extends Test_Base{
@@ -17,5 +18,6 @@ public class SingInTest extends Test_Base{
 
         signInPage = new SignInPage(app.driver);
         signInPage.signIn(email,password);
+        homePage.openMenu(Menu.Jeans);
     }
 }
