@@ -6,7 +6,6 @@ import lombok.Getter;
 public enum Menu {
     WHATS_NEWS("3"),
     WOMEN("4"),
-    Jeans("11"),
     MEN("5"),
     GEAR("6"),
     TRAINING("7"),

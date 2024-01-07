@@ -30,4 +30,8 @@ public class Home_Page extends BasePage{
     public void clickOnSignInButton(){
         signInButton.click();
     }
+    public void clickOnSearchField(String whatFound){
+        search.sendKeys(whatFound);
+    }
+
 }

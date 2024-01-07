@@ -5,11 +5,12 @@ import E2E.pages.SignInPage;
 import E2E.pages.enums.Menu;
 import org.testng.annotations.Test;
 
-public class SingInTest extends Test_Base{
+public class SingInTest extends Test_Base {
     Home_Page homePage;
     SignInPage signInPage;
+
     @Test
-    public void userCanSingIn(){
+    public void userCanSingIn() {
         String email = "rashevchenkooo@gmail.com";
         String password = "Gazmanov_1234";
 
@@ -17,7 +18,7 @@ public class SingInTest extends Test_Base{
         homePage.clickOnSignInButton();
 
         signInPage = new SignInPage(app.driver);
-        signInPage.signIn(email,password);
-        homePage.openMenu(Menu.Jeans);
+        signInPage.signIn(email, password);
+
     }
 }
